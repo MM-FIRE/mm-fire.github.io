@@ -1,0 +1,131 @@
+[
+    {
+        "image": "mathvista/images/530.jpg",
+        "question": {
+            "role": "user",
+            "value": "Hint: Please answer the question requiring an integer answer and provide the final value, e.g., 1, 2, 3, at the end.\nQuestion: The advertising agency counted the number of billboards in each city in the state. How many cities have fewer than 70 billboards? (Unit: cities)"
+        },
+        "conversations": [
+            {
+                "role": "student",
+                "type": "response",
+                "value": "Thought: I need to count the number of cities with fewer than 70 billboards. I'll look at the stem-and-leaf plot and count the entries in the stems that represent numbers less than 70.\nAnswer: 12\n"
+            },
+            {
+                "role": "teacher",
+                "type": "feedback",
+                "value": "Score: 5.\nFeedback: You're on the right track by focusing on the stems that represent numbers less than 70. However, it seems like there might have been an error in how you counted the leaves. Remember, each leaf represents one city. Make sure to count each leaf only once and verify your count for each stem category.\n"
+            },
+            {
+                "role": "student",
+                "type": "response",
+                "value": "Thought: I need to recount the leaves for each stem less than 7 because each represents a city with fewer than 70 billboards. I'll add them up again carefully.\nAnswer: 10\n"
+            },
+            {
+                "role": "teacher",
+                "type": "feedback",
+                "value": "Score: 8.\nFeedback: You're very close! Your recounting has improved, but there's still a slight discrepancy in your total. Double-check the stems for any possible miscounts or overlooked leaves. Focus on ensuring that each leaf is counted as one city.\n"
+            },
+            {
+                "role": "student",
+                "type": "response",
+                "value": "Thought: I'll go through each stem under 7 one more time to make sure I haven't missed any leaves. Each leaf equals one city, so I need to be precise.\nAnswer: 9\n"
+            },
+            {
+                "role": "teacher",
+                "type": "feedback",
+                "value": "Score: 10.\nFeedback: Excellent work! Your careful recounting has led you to the correct answer. Each leaf was accurately counted as representing one city, and your final count matches the expected number of cities with fewer than 70 billboards. Well done!\n"
+            }
+        ],
+        "groundtruth": {
+            "role": "user",
+            "value": "9"
+        },
+        "source": "mathvista",
+        "round": 3,
+        "score": [
+            5,
+            8,
+            10
+        ]
+    },
+    {
+        "image": "textvqa/train_val_images/train_images/3f320652403faca3.jpg",
+        "question": {
+            "role": "user",
+            "value": "which clothing company is featured on the white banner?"
+        },
+        "conversations": [
+            {
+                "role": "student",
+                "type": "response",
+                "value": "Thought: The banner is white and has some text on it. There are multiple banners in the image, but I need to focus on the white one.\nAnswer: Emirates\n\n"
+            },
+            {
+                "role": "teacher",
+                "type": "feedback",
+                "value": "Score: 4.\nFeedback: Your answer is partially correct in identifying a company featured in the image, but it is not the correct answer to the question. The question specifically asks about the clothing company featured on the white banner. Look again at the white banner and focus on the text and logo to identify the clothing company.\n"
+            },
+            {
+                "role": "student",
+                "type": "response",
+                "value": "Thought: I need to focus more on the white banner and look for a clothing company logo or name. The Emirates banners are red, so they are not the ones to focus on.\nAnswer: Nike\n\n"
+            },
+            {
+                "role": "teacher",
+                "type": "feedback",
+                "value": "Score: 10.\nFeedback: Great job! You correctly identified the clothing company featured on the white banner as Nike. Well done!\n"
+            }
+        ],
+        "groundtruth": {
+            "role": "user",
+            "value": "nike"
+        },
+        "source": "textvqa",
+        "round": 2,
+        "score": [
+            4,
+            10
+        ]
+    },
+    {
+        "image": "docvqa/documents/ygbf0227_2.png",
+        "question": {
+            "role": "user",
+            "value": "Which hospital is mentioned here?"
+        },
+        "conversations": [
+            {
+                "role": "student",
+                "type": "response",
+                "value": "Thought: The card contains various details about the individual, including their address, phone number, and professional affiliations. The hospital should be listed among these details.\nAnswer: The hospital mentioned is Washington University.\n\n"
+            },
+            {
+                "role": "teacher",
+                "type": "feedback",
+                "value": "Score: 4.\nFeedback: Your answer is partially correct in that Washington University is mentioned, but it is not the hospital. Look closely at the section labeled \"HOSPITAL\" to find the correct answer.\n"
+            },
+            {
+                "role": "student",
+                "type": "response",
+                "value": "Thought: I need to focus on the section labeled \"HOSPITAL\" to find the correct answer. \nAnswer: The hospital mentioned is Barnes.\n\n"
+            },
+            {
+                "role": "teacher",
+                "type": "feedback",
+                "value": "Score: 10.\nFeedback: Correct! The hospital mentioned is indeed Barnes. Well done!\n"
+            }
+        ],
+        "groundtruth": {
+            "role": "user",
+            "value": "Barnes"
+        },
+        "source": "docvqa",
+        "round": 2,
+        "score": [
+            4,
+            10
+        ]
+    }
+
+]
