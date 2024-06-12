@@ -1,5 +1,7 @@
 # FIRE Website
 
+[mm-fire.github.io](https://mm-fire.github.io)
+
 ## Setup
 Install [pnpm](https://pnpm.io/)
 
@@ -17,4 +19,3 @@ Build:
 ```bash
 pnpm run build
 ```
->>>>>>> master
