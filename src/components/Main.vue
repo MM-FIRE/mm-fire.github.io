@@ -14,40 +14,40 @@
       </div>
       <div class="author-list">
         <span class="author">
-          <el-link href="#">Pengxiang Li</el-link>
+          <el-link href="https://github.com/Pengxiang-Li">Pengxiang Li</el-link>
           <span class="ind">&#9733;1,2</span>,
         </span>
         <span class="author">
-          <el-link href="#">Zhi Gao</el-link>
+          <el-link href="https://zhigao2017.github.io/">Zhi Gao</el-link>
           <span class="ind">&#9733;2,3</span>,
         </span>
         <span class="author">
-          <el-link href="#">Bofei Zhang</el-link>
+          <el-link href="https://scholar.google.com/citations?user=H8o9QtUAAAAJ&hl=en">Bofei Zhang</el-link>
           <span class="ind">&#9733;2</span>,
         </span>
         <span class="author">
-          <el-link href="#">Tao Yuan</el-link>
+          <el-link href="https://i.yt.sb/">Tao Yuan</el-link>
           <span class="ind">2</span>,
         </span>
         <span class="author">
-          <el-link href="#">Yuwei Wu</el-link>
+          <el-link href="https://wu-yuwei-bit.github.io/">Yuwei Wu</el-link>
           <span class="ind">&#9993;1</span>,
         </span>
         <br>
         <span class="author">
-          <el-link href="#">Mehrtash Harand</el-link>
+          <el-link href="https://sites.google.com/site/mehrtashharandi">Mehrtash Harand</el-link>
           <span class="ind">4</span>,
         </span>
         <span class="author">
-          <el-link href="#">Yunde Ji</el-link>
+          <el-link href="https://scholar.google.com/citations?user=Sl6TV7gAAAAJ&hl=en">Yunde Jia</el-link>
           <span class="ind">1</span>,
         </span>
         <span class="author">
-          <el-link href="#">Song-Chun Zhu</el-link>
+          <el-link href="https://www.zhusongchun.net/">Song-Chun Zhu</el-link>
           <span class="ind">2,3,5</span>,
         </span>
         <span class="author">
-          <el-link href="#">Qing Li</el-link>
+          <el-link href="https://liqing.io/">Qing Li</el-link>
           <span class="ind">&#9993;2</span>
         </span>
       </div>
