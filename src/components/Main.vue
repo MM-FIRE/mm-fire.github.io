@@ -101,22 +101,17 @@
           <el-image class="stats-img" src="./stats/piechart.webp"></el-image>
         </el-carousel-item>
         <el-carousel-item>
-          <el-image class="stats-img" src="./stats/piechart.webp"></el-image>
+          <el-image class="stats-img" src="./stats/h1.svg"></el-image>
         </el-carousel-item>
         <el-carousel-item>
-          <el-image class="stats-img" src="./stats/piechart.webp"></el-image>
+          <el-image class="stats-img" src="./stats/h2.svg"></el-image>
+        </el-carousel-item>
+        <el-carousel-item>
+          <el-image class="stats-img" src="./stats/d1.svg"></el-image>
         </el-carousel-item>
       </el-carousel>
     </div>
-    <div class="section">
-      <div class="section-title">Examples</div>
-    <el-carousel :interval="8000" type="card" height="1200px">
-      <el-carousel-item v-for="d in dataset">
-        <Dialog class="example-dialog" :data="d" />
-      </el-carousel-item>
-    </el-carousel>
-      </div>
-    </div>
+
     <div class="section">
       <div class="section-title">Evaluation</div>
       <el-carousel :interval="8000" height="300px">
@@ -131,6 +126,38 @@
         </el-carousel-item>
       </el-carousel>
     </div>
+    <div class="section">
+      <div class="section-title">Results</div>
+      <el-carousel :interval="8000" height="300px">
+        <el-carousel-item>
+          <el-image class="stats-img" src="./results/acc_turn.webp"></el-image>
+        </el-carousel-item>
+        <el-carousel-item>
+          <el-image class="stats-img" src="./results/atr_number.webp"></el-image>
+        </el-carousel-item>
+        <el-carousel-item>
+          <el-image class="stats-img" src="./results/adr_number.webp"></el-image>
+        </el-carousel-item>
+        <el-carousel-item>
+          <el-image class="stats-img" src="./results/rr_number.webp"></el-image>
+        </el-carousel-item>
+        <el-carousel-item>
+          <el-image class="stats-img" src="./results/at_number.webp"></el-image>
+        </el-carousel-item>
+
+      </el-carousel>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Examples</div>
+    <el-carousel :interval="8000" type="card" height="1200px">
+      <el-carousel-item v-for="d in dataset">
+        <Dialog class="example-dialog" :data="d" />
+      </el-carousel-item>
+    </el-carousel>
+      </div>
+    </div>
+
     <div class="footer">
       This website is inspired by <el-link href="https://mathvista.github.io/">MathVista</el-link> and <el-link href="https://nerfies.github.io/">Nerfies</el-link>.
     </div>
@@ -213,7 +240,7 @@ onMounted(() => {
 }
 
 .teaser {
-  max-width: 1280px;
+  max-width: 1080px;
   margin: 0 auto;
 }
 
@@ -228,7 +255,7 @@ onMounted(() => {
 }
 
 .example-dialog {
-  width: 640px;
+  width: 880px;
 }
 
 .footer {
