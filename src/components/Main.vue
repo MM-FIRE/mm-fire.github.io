@@ -101,13 +101,13 @@
           <el-image class="stats-img" src="./stats/piechart.webp"></el-image>
         </el-carousel-item>
         <el-carousel-item>
-          <el-image class="stats-img" src="./stats/h1.svg"></el-image>
+          <el-image class="stats-img" src="./stats/h1.webp"></el-image>
         </el-carousel-item>
         <el-carousel-item>
-          <el-image class="stats-img" src="./stats/h2.svg"></el-image>
+          <el-image class="stats-img" src="./stats/h2.webp"></el-image>
         </el-carousel-item>
         <el-carousel-item>
-          <el-image class="stats-img" src="./stats/d1.svg"></el-image>
+          <el-image class="stats-img" src="./stats/d1.webp"></el-image>
         </el-carousel-item>
       </el-carousel>
     </div>
@@ -251,6 +251,7 @@ onMounted(() => {
 .intro {
   text-align: left;
   font-size: 1em;
+  max-width: 1360px;
   line-height: 150%;
 }
 

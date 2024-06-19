@@ -11,10 +11,10 @@
       <div v-for="c in data.conversations" :class="{ message: true, 'message-right': c.role === 'student' }">
         <div class="user-icon">
           <template v-if="c.role === 'teacher'">
-            <el-avatar src="./teacher.webp" />
+            <el-avatar src="./teacher.png" />
           </template>
           <template v-else>
-            <el-avatar src="./student.webp" />
+            <el-avatar src="./student.png" />
           </template>
         </div>
         <div class="message-bubble">
@@ -71,6 +71,7 @@ const props = defineProps(['data'])
 
 .user-icon {
   width: 64px;
+  background-color: #ffffff;
 }
 
 .message-bubble {
@@ -78,7 +79,7 @@ const props = defineProps(['data'])
   padding: 10px;
   background-color: #eee;
   border-radius: 4px;
-  max-width: 75%;
+  max-width: 90%;
   background-color: #fde2e2;
 }
 </style>
