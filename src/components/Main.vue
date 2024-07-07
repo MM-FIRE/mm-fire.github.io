@@ -17,7 +17,7 @@
       </div>
       <div class="author-list">
         <span class="author">
-          <el-link href="https://github.com/Pengxiang-Li">Pengxiang Li</el-link>
+          <el-link href="https://pengxiang-li.github.io">Pengxiang Li</el-link>
           <span class="ind">&#9733;1,2</span>,
         </span>
         <span class="author">
@@ -38,7 +38,7 @@
         </span>
         <br>
         <span class="author">
-          <el-link href="https://sites.google.com/site/mehrtashharandi">Mehrtash Harand</el-link>
+          <el-link href="https://sites.google.com/site/mehrtashharandi">Mehrtash Harandi</el-link>
           <span class="ind">4</span>,
         </span>
         <span class="author">
