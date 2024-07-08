@@ -209,7 +209,7 @@
       
       
       </p>
-      <el-carousel :interval="8000">
+      <el-carousel :interval="8000" height="350px">
         <el-carousel-item>
           <el-image class="stats-img" src="./eval1.webp"></el-image>
         </el-carousel-item>
@@ -247,15 +247,53 @@
     </div> -->
 
     <div class="section">
-      <div class="section-title">Examples</div>
-      <p class="intro">We randomly sampled some examples from FIRE-100K, FIRE-1M, and FIRE-Bench and show them here. </p>
-      <el-carousel :interval="10000" type="card" height="900px">
-        <el-carousel-item v-for="d in dataset" :key="d.id" :style="{ width: '1200px' }">
+      <div class="section-title">Examples of FIRE-100K</div>
+      <p class="intro">We randomly sampled some examples from FIRE-100K and show them here. </p>
+      <el-carousel :interval="10000" type="card" height="1400px" indicator-position="none">
+        <el-carousel-item v-for="d in dataset1" :key="d.id" :style="{ width: '1200px' }">
+          <Dialog class="example-dialog" :data="d" />
+        </el-carousel-item>
+      </el-carousel>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Examples of FIRE-1M</div>
+      <p class="intro">We randomly sampled some examples from FIRE-1M and show them here. </p>
+      <el-carousel :interval="8000" type="card" height="1400px" indicator-position="none">
+        <el-carousel-item v-for="d in dataset2" :key="d.id" :style="{ width: '1200px' }">
+          <Dialog class="example-dialog" :data="d" />
+        </el-carousel-item>
+      </el-carousel>
+    </div>
+ 
+ 
+    <div class="section">
+      <div class="section-title">Examples of FIRE-Bench</div>
+      <p class="intro">We randomly sampled some examples from FIRE-Bench and show them here. </p>
+      <el-carousel :interval="10000" type="card" height="1200px" indicator-position="none"> 
+        <el-carousel-item v-for="d in dataset3" :key="d.id" :style="{ width: '1200px' }">
           <Dialog class="example-dialog" :data="d" />
         </el-carousel-item>
       </el-carousel>
     </div>
   </div>
+
+
+  <section class="section" id="BibTeX" style="text-align: left;" >  
+  <div class="container is-max-desktop content" style="max-width: 100%; margin: 0 auto;">  
+    <h3 class="title" style="font-size: small;">  
+      BibTeX
+    </h3>
+    <pre><code style="max-width: 1000px">
+      @article{fire,      
+      <br>          title = {FIRE: A Dataset for Feedback Integration and Refinement Evaluation of Multimodal Models},
+      <br>          author = {Pengxiang Li, Zhi Gao, Bofei Zhang, Tao Yuan, Yuwei Wu, Mehrtash Harandi, Yunde Jia, 
+      <br>                    Song-Chun Zhu, Qing Li},
+      <br>          year = {2024} 
+      <br>      }
+    </code></pre>
+  </div>
+</section>
 
   <div class="footer">
     This website is inspired by <el-link href="https://mathvista.github.io/">MathVista</el-link> and <el-link
@@ -268,18 +306,35 @@ import Dialog from './Dialog.vue'
 
 import { onMounted, ref } from 'vue'
 
-const dataset = ref([])
+const dataset1 = ref([])
+const loadData1 = async () => {
+  const resp1 = await fetch('./data/demo-100k.json')
+  dataset1.value = await resp1.json()
+}
 
-const loadData = async () => {
-  const resp = await fetch('./data/demo.json')
-  // dataset.value = resp.data
-  dataset.value = await resp.json()
+const dataset2 = ref([])
+const loadData2 = async () => {
+  const resp2 = await fetch('./data/demo-1m.json')
+  dataset2.value = await resp2.json()
+}
+
+const dataset3 = ref([])
+const loadData3 = async () => {
+  const resp3 = await fetch('./data/demo-bench.json')
+  dataset3.value = await resp3.json()
 }
 
 onMounted(() => {
-  loadData()
+  loadData1(),
+  loadData2(),
+  loadData3()
 })
 </script>
+
+
+
+
+
 
 <style scoped>
 .main {
@@ -373,7 +428,7 @@ onMounted(() => {
 }
 
 .example-dialog {
-  width: 880px;
+  width: 800px;
 }
 
 .footer {
@@ -381,53 +436,35 @@ onMounted(() => {
   margin: 100px 0 60px 0;
 }
 
-/* 覆盖Element UI的默认指示器样式 */
-/* 自定义轮播图指示器的样式 */
-.el-carousel__indicators--outside .el-carousel__indicator.is-active button {
-  background-color: #ff4d4f;
-  /* 激活状态的指示器颜色 */
-}
 
-.el-carousel__indicators--outside .el-carousel__indicator button {
-  background-color: #c0c4cc;
-  /* 非激活状态的指示器颜色 */
-  opacity: 0.7;
-  /* 降低透明度以区分 */
-}
-
+/* The top button */
 .external-link {
   display: inline-block;
   padding: 8px 16px;
-  /* 根据需要调整内边距 */
+  /* inner margin */
   margin: 4px;
-  /* 根据需要调整外边距 */
+  /* outer margin */
   border: 1px solid #9a9c9e;
-  /* 边框颜色 */
+  /* color of border */
   border-radius: 9px;
-  /* 边框圆角 */
   background-color: #8a8b8b;
-  /* 背景颜色 */
   color: white;
-  /* 文本颜色 */
   text-decoration: none;
-  /* 去除下划线 */
   font-size: 20px;
-  /* 字体大小 */
   transition: background-color 0.3s;
-  /* 背景颜色变化的过渡效果 */
 }
 
 .external-link:hover {
   background-color: #8e8f90;
-  /* 鼠标悬停时的背景颜色 */
 }
 
 .external-link .icon {
   margin-right: 8px;
-  /* 图标与文本之间的间距 */
 }
 
 .external-link .fas {
   font-size: 18px;
-  /* 字体大小 */
-}</style>
+}
+ 
+ 
+</style>
