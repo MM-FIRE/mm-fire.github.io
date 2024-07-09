@@ -14,9 +14,6 @@ importers:
       element-plus:
         specifier: ^2.7.5
         version: 2.7.5(vue@3.4.27)
-      prismjs:
-        specifier: ^1.29.0
-        version: 1.29.0
       vue:
         specifier: ^3.4.21
         version: 3.4.27
