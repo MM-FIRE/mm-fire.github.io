@@ -284,16 +284,17 @@
     <h3 class="title" style="font-size: small;">  
       BibTeX
     </h3>
-    <pre><code style="max-width: 1000px">
-      @article{fire,      
-      <br>          title = {FIRE: A Dataset for Feedback Integration and Refinement Evaluation of Multimodal Models},
-      <br>          author = {Pengxiang Li, Zhi Gao, Bofei Zhang, Tao Yuan, Yuwei Wu, Mehrtash Harandi, Yunde Jia, 
-      <br>                    Song-Chun Zhu, Qing Li},
-      <br>          year = {2024} 
-      <br>      }
-    </code></pre>
+  <div class="bibtex-container">
+    <pre><code class="language-bibtex">@article{fire,      
+  title = {FIRE: A Dataset for Feedback Integration and Refinement Evaluation of Multimodal Models},
+  author = {Pengxiang Li, Zhi Gao, Bofei Zhang, Tao Yuan, Yuwei Wu, Mehrtash Harandi, Yunde Jia, 
+            Song-Chun Zhu, Qing Li},
+  year = {2024} 
+}</code></pre>
   </div>
+</div>
 </section>
+
 
   <div class="footer">
     This website is inspired by <el-link href="https://mathvista.github.io/">MathVista</el-link> and <el-link
@@ -466,5 +467,20 @@ onMounted(() => {
   font-size: 18px;
 }
  
- 
+.bibtex-container {
+     background-color: #e1e4e9; /* Change background color to match the theme */
+     padding: 1em; /* Add padding for better readability */
+     border-radius: 5px; /* Add border radius for rounded corners */
+     text-align: left;
+     white-space: pre-wrap; /* Enable automatic line breaks */
+     overflow-wrap: break-word; /* Break words when necessary */
+   }
+   pre {
+     margin: 0;
+   }
+   code {
+     font-family: 'Courier New', Courier, monospace; /* Change font to monospace */
+     color: #0a0b0b; /* Change text color to match the theme */
+   }
 </style>
+
