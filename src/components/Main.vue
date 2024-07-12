@@ -121,6 +121,17 @@
               <span>Data</span>
             </a>
           </span>
+          <span class="link-block">
+            <!-- <a target="_blank" href="" -->
+            <a target="_blank" href="https://huggingface.co/li-qing/llava-next-llama3-8b-student-fire/tree/main"
+              class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                <i class="fa fa-share-square"></i>
+              </span>
+              <span>Model</span>
+            </a>
+          </span>
+
           <!-- <span class="link-block">
                 <a href="file/clova_cvpr24_poster.pdf"
                    class="external-link button is-normal is-rounded is-dark">
@@ -140,6 +151,7 @@
                   <span>Slides</span>
                 </a>
               </span> -->
+
         </div>
       </div>
 
