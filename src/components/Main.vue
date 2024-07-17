@@ -252,7 +252,17 @@
       
       
       </p>
-      <el-carousel :interval="8000" height="350px">
+
+        <el-card class="stats-img-1">
+        <el-image src="./stats/Slide1.png"></el-image>
+      </el-card>
+        <br>
+            <el-card class="stats-img-1">
+        <el-image src="./stats/Slide2.png"></el-image>
+      </el-card>
+
+
+      <!-- <el-carousel :interval="8000" height="350px">
         <el-carousel-item>
           
         </el-carousel-item>
@@ -282,7 +292,7 @@
           <el-image class="stats-img" src="./results/at_number.webp"></el-image>
         </el-carousel-item>
 
-      </el-carousel>
+      </el-carousel> -->
     </div>
     <!-- <div class="section">
       <div class="section-title">Results</div>
@@ -455,8 +465,8 @@ onMounted(() => {
 }
 
 .stats-img-1 {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 95%;
+    max-height: 95%;
     object-fit: contain;
   }
 .intro {
