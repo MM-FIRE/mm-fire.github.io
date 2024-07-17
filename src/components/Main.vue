@@ -210,7 +210,21 @@
     <div class="section">
       <div class="section-title">Statistics</div>
       <p>Notable statistics of <img class="fire-icon" src="/fire_sm.png"><b>FIRE</b></p>
-      <el-carousel :interval="8000" height="450px">
+
+
+         
+      <el-card class="teaser">
+        <el-image src="./stats/piechart.webp"></el-image>
+      </el-card>
+        <br>
+            <el-card class="teaser">
+        <el-image src="./stats/s1-6.png"></el-image>
+      </el-card>
+
+
+
+
+      <!-- <el-carousel :interval="8000" height="450px">
         <el-carousel-item>
           <el-image class="stats-img" src="./stats/piechart.webp"></el-image>
         </el-carousel-item>
@@ -223,11 +237,12 @@
         <el-carousel-item>
           <el-image class="stats-img" src="./stats/d1.webp"></el-image>
         </el-carousel-item>
-      </el-carousel>
+      </el-carousel> -->
     </div>
 
     <div class="section">
       <div class="section-title">Evaluation</div>
+      <el-image class="stats-img" src="./eval1.webp"></el-image>
       <p class="intro">
         We design two evaluation settings: fixed dialogues and free dialogues to evaluate the performance of the student and teacher models.
         <br>
@@ -239,7 +254,7 @@
       </p>
       <el-carousel :interval="8000" height="350px">
         <el-carousel-item>
-          <el-image class="stats-img" src="./eval1.webp"></el-image>
+          
         </el-carousel-item>
         <el-carousel-item>
           <el-image class="stats-img-1" src="./results/fixed.webp"></el-image>
