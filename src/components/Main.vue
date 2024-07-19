@@ -207,6 +207,20 @@
         significance of the FIRE dataset.
       </p>
     </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="publication-video">
+
+            <iframe width= 1120 height=630  src="https://www.youtube.com/embed/PYPuZn8RjCE?si=3RO4hphplmbG_LJg"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+
+
     <div class="section">
       <div class="section-title">Statistics</div>
       <p>Notable statistics of <img class="fire-icon" src="/fire_sm.png"><b>FIRE</b></p>
