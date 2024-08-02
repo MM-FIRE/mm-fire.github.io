@@ -261,28 +261,13 @@
     <div class="section">
       <div class="section-title">Dataset construction</div>
       <p class="intro">We build  <img class="fire-icon" src="/fire_sm.png"> <b>FIRE-1.1M</b> (FIRE-100K + FIRE-1M) for training: We first prompt GPT-4V to generate 100K high-quality feedback-refinement conversations from 27 source datasets. To scale up the training set, we train models on FIRE-100K and further simulate 1M dialogues as additional training data.</p>
-
-
          
       <el-card class="teaser">
         <el-image src="./stats/pipeline.webp"></el-image>
       </el-card>
       
-      <!-- <el-carousel :interval="8000" height="450px">
-        <el-carousel-item>
-          <el-image class="stats-img" src="./stats/piechart.webp"></el-image>
-        </el-carousel-item>
-        <el-carousel-item>
-          <el-image class="stats-img" src="./stats/h1.webp"></el-image>
-        </el-carousel-item>
-        <el-carousel-item>
-          <el-image class="stats-img" src="./stats/h2.webp"></el-image>
-        </el-carousel-item>
-        <el-carousel-item>
-          <el-image class="stats-img" src="./stats/d1.webp"></el-image>
-        </el-carousel-item>
-      </el-carousel> -->
     </div>
+    
     <div class="section">
       <div class="section-title">Evaluation</div>
       <el-image class="stats-img" src="./eval1.webp"></el-image>
