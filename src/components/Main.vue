@@ -162,7 +162,7 @@
             <a target="_blank" href="https://x.com/Sealiqing/status/1819279627438973133"
               class="external-link button is-normal is-rounded is-dark">
               <span class="icon">
-                <i class="fa fa-twitter"></i>
+                <i class="fa fa-twitter-square"></i>
               </span>
               <span>Twitter</span>
             </a>
