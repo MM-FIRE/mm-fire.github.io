@@ -157,6 +157,16 @@
               <span>Demo</span>
             </a>
           </span>
+                    <span class="link-block">
+            <!-- <a target="_blank" href="" -->
+            <a target="_blank" href="https://x.com/Sealiqing/status/1819279627438973133"
+              class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                <i class="fa fa-twitter"></i>
+              </span>
+              <span>Twitter</span>
+            </a>
+          </span>
           <!-- <span class="link-block">
                 <a href="file/clova_cvpr24_poster.pdf"
                    class="external-link button is-normal is-rounded is-dark">
@@ -267,7 +277,7 @@
       </el-card>
       
     </div>
-    
+
     <div class="section">
       <div class="section-title">Evaluation</div>
       <el-image class="stats-img" src="./eval1.webp"></el-image>
