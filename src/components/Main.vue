@@ -387,8 +387,8 @@
   <div class="bibtex-container">
     <pre><code class="language-bibtex">@article{li2024fire,
       title={FIRE: A Dataset for Feedback Integration and Refinement Evaluation of Multimodal Models},
-      author={Li, Pengxiang and Gao, Zhi and Zhang, Bofei and Yuan, Tao and Wu, Yuwei and <br>Harandi, Mehrtash and Jia, Yunde and Zhu, Song-Chun and Li, Qing},
-      journal={arXiv preprint arXiv:2407.11522},
+      author={Li, Pengxiang and Gao, Zhi and Zhang, Bofei and Yuan, Tao and Wu, Yuwei and Harandi, Mehrtash and Jia, Yunde and Zhu, Song-Chun and Li, Qing},
+      journal={Advances in Neural Information Processing Systems},
       year={2024}
     }
 </code></pre>
@@ -574,19 +574,19 @@ onMounted(() => {
 }
  
 .bibtex-container {
-     background-color: #e1e4e9; /* Change background color to match the theme */
-     padding: 1em; /* Add padding for better readability */
-     border-radius: 5px; /* Add border radius for rounded corners */
-     text-align: left;
-     white-space: pre-wrap; /* Enable automatic line breaks */
-     overflow-wrap: break-word; /* Break words when necessary */
-   }
-   pre {
-     margin: 0;
-   }
-   code {
-     font-family: 'Courier New', Courier, monospace; /* Change font to monospace */
-     color: #0a0b0b; /* Change text color to match the theme */
-   }
+  background-color: #e1e4e9; /* Change background color to match the theme */
+  padding: 1em; /* Add padding for better readability */
+  border-radius: 5px; /* Add border radius for rounded corners */
+  text-align: left;
+  white-space: pre; /* Preserve formatting and prevent line breaks */
+  overflow-x: auto; /* Add horizontal scroll bar */
+}
+pre {
+  margin: 0;
+}
+code {
+  font-family: 'Courier New', Courier, monospace; /* Change font to monospace */
+  color: #0a0b0b; /* Change text color to match the theme */
+}
 </style>
 
