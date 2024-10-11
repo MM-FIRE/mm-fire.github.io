@@ -17,6 +17,12 @@
         <br><span class="uns">R</span>efinement <span class="uns">E</span>valuation
         of Multimodal Models
       </div>
+
+      <div>
+        <!-- # write the conference name here,make it in the middle -->
+        <div class="conference">Neurips 2024</div>
+      </div>
+
       <div class="author-list">
         <span class="author">
           <el-link href="https://pengxiang-li.github.io">Pengxiang Li</el-link>
@@ -194,6 +200,7 @@
 
 
     </div>
+
 
     <div class="tldr">
       <p><b>TL;DR</b> We build FIRE, a dataset that empowers VLMs to integrate user feedback into the refined responses
@@ -378,12 +385,13 @@
       BibTeX
     </h3>
   <div class="bibtex-container">
-    <pre><code class="language-bibtex">@article{fire,      
-  title = {FIRE: A Dataset for Feedback Integration and Refinement Evaluation of Multimodal Models},
-  author = {Pengxiang Li, Zhi Gao, Bofei Zhang, Tao Yuan, Yuwei Wu, Mehrtash Harandi, Yunde Jia, 
-            Song-Chun Zhu, Qing Li},
-  year = {2024} 
-}</code></pre>
+    <pre><code class="language-bibtex">@article{li2024fire,
+      title={FIRE: A Dataset for Feedback Integration and Refinement Evaluation of Multimodal Models},
+      author={Li, Pengxiang and Gao, Zhi and Zhang, Bofei and Yuan, Tao and Wu, Yuwei and Harandi, Mehrtash and Jia, Yunde and Zhu, Song-Chun and Li, Qing},
+      journal={arXiv preprint arXiv:2407.11522},
+      year={2024}
+    }
+</code></pre>
   </div>
 </div>
 </section>
@@ -484,7 +492,12 @@ onMounted(() => {
   font-size: 2em;
   font-weight: bold;
 }
-
+.conference {
+  text-align: center;
+  margin: 20px;
+  font-size: 1.5em;
+  color: #665;
+}
 .uns {
   text-decoration: underline;
 }
