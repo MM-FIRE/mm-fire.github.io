@@ -20,7 +20,7 @@
 
       <div>
         <!-- # write the conference name here,make it in the middle -->
-        <div class="conference">Neurips 2024</div>
+        <div class="conference">NeurIPS 2024 Datasets and Benchmarks Track (Poster)</div>
       </div>
 
       <div class="author-list">
@@ -387,7 +387,7 @@
   <div class="bibtex-container">
     <pre><code class="language-bibtex">@article{li2024fire,
       title={FIRE: A Dataset for Feedback Integration and Refinement Evaluation of Multimodal Models},
-      author={Li, Pengxiang and Gao, Zhi and Zhang, Bofei and Yuan, Tao and Wu, Yuwei and <br> Harandi, Mehrtash and Jia, Yunde and Zhu, Song-Chun and Li, Qing},
+      author={Li, Pengxiang and Gao, Zhi and Zhang, Bofei and Yuan, Tao and Wu, Yuwei and <br>Harandi, Mehrtash and Jia, Yunde and Zhu, Song-Chun and Li, Qing},
       journal={arXiv preprint arXiv:2407.11522},
       year={2024}
     }
